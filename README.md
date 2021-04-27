@@ -1,11 +1,32 @@
 # Python API Challenge
 A repository containing Python API challenge homework
 
-**API Used:**  
+## Python API Challenge structure
+```
+Python API Challenge
+|__ images/             # contains heatmap with hotel pins for VacationPy
+|
+|__ output_data/        # contains images of WeatherPy plots and weather_data.csv
+|
+|
+|__ .gitignore          # gitignore file
+|
+|__ README.md           # readme file
+|
+|__ VacationPy.ipynb    # contains analysis for VacationPy
+|
+|__ WeatherPy.ipynb     # contains analysis for WeatherPy
+|
+|__ api_keys.py         # contains API keys for API's used
+
+
+```
+
+## API Used:
 - OpeanWeatherMap API https://openweathermap.org/api
 - Google Places API https://developers.google.com/maps/documentation/places/web-service/overview#Introduction
 
-**API Usage**
+## API Usage
 - Metric units are used in OpenWeatherMap API
 - All questions that have imperial units have been converted to metric and rounded to the nearest 0  
 
@@ -14,12 +35,12 @@ A repository containing Python API challenge homework
 |temp|Fahrenheit|Celsius| 
 |wind|miles/hour|meter/sec| 
   
-**API Keys**
+## API Keys
 - Both API's require an API key to use
-- Create an API key for each API and paste into _"api_keys.py"_  
+- Create an API key for each and paste into _"api_keys.py"_  
   
 
-**Dependencies and Setup**
+## Dependencies and Setup
 ```import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -45,8 +66,9 @@ import time
   - Humidity (%)
   - Max Temperature (°C)
   - Wind Speed (m/s)
-- A DataFrame is constructed as below:
-  
+- A DataFrame is constructed as below:  
+![image](https://user-images.githubusercontent.com/79504423/116266827-6d031a00-a7ae-11eb-8ce9-672be50b0d45.png)  
+
 - The following relationships are plotted  
 Temperature (°C) vs. Latitude  
 ![chart](output_data/city_latitude_vs_max_temperature.png)  
@@ -57,15 +79,32 @@ Cloudiness (%) vs. Latitude
 Wind Speed (m/s) vs. Latitude  
 ![chart](output_data/city_latitude_vs_wind_speed.png)  
 
-- A linear regression analysis is completede on the following:
-  - Northern Hemisphere - Temperature (°C) vs. Latitude
-  - Southern Hemisphere - Temperature (°C) vs. Latitude
-  - Northern Hemisphere - Humidity (%) vs. Latitude
-  - Southern Hemisphere - Humidity (%) vs. Latitude
-  - Northern Hemisphere - Cloudiness (%) vs. Latitude
-  - Southern Hemisphere - Cloudiness (%) vs. Latitude
-  - Northern Hemisphere - Wind Speed (m/s) vs. Latitude
-  - Southern Hemisphere - Wind Speed (m/s) vs. Latitude  
+- A linear regression analysis is completede on the following:  
+
+Northern Hemisphere - Temperature (°C) vs. Latitude!  
+![image](https://user-images.githubusercontent.com/79504423/116266929-860bcb00-a7ae-11eb-8d9f-e9d33cf292fd.png)  
+
+Southern Hemisphere - Temperature (°C) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267129-b489a600-a7ae-11eb-8304-16a93d52a6c5.png)  
+
+Northern Hemisphere - Humidity (%) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267155-bc494a80-a7ae-11eb-90e4-9696ac7354e5.png)
+
+Southern Hemisphere - Humidity (%) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267179-c1a69500-a7ae-11eb-9799-993387bcb374.png)
+
+Northern Hemisphere - Cloudiness (%) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267202-c66b4900-a7ae-11eb-821b-da3c96f41523.png)
+
+Southern Hemisphere - Cloudiness (%) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267218-cb2ffd00-a7ae-11eb-896a-1082cf540c55.png)
+
+Northern Hemisphere - Wind Speed (m/s) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267238-d08d4780-a7ae-11eb-8146-7416f881594a.png)
+
+Southern Hemisphere - Wind Speed (m/s) vs. Latitude  
+![image](https://user-images.githubusercontent.com/79504423/116267258-d551fb80-a7ae-11eb-921a-e8add867747f.png)
+
   
   
 ## Part II - VacationPy
