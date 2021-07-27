@@ -1,7 +1,7 @@
-# Python API Challenge
-A repository containing Python API challenge homework
+# Python API - Earth's Weather
+A repository containing insights as to how a city's latitude and longitude affect its weather.
 
-## Python API Challenge structure
+## Repository Structure
 ```
 Python API Challenge
 |__ images/             # contains heatmap with hotel pins for VacationPy
